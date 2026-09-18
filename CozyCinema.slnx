@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/CozyCinema.Api/CozyCinema.Api.csproj" />
+    <Project Path="src/CozyCinema.Application/CozyCinema.Application.csproj" />
+    <Project Path="src/CozyCinema.Domain/CozyCinema.Domain.csproj" />
+    <Project Path="src/CozyCinema.Infrastructure/CozyCinema.Infrastructure.csproj" />
+  </Folder>
+</Solution>

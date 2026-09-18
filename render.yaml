@@ -1,0 +1,21 @@
+services:
+  - name: cozy-cinema-api
+    type: web
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    region: frankfurt
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      # Secrets: preenchidos no dashboard da Render na criação do Blueprint
+      # (sync: false = não fica versionado neste arquivo)
+      - key: ConnectionStrings__Supabase
+        sync: false
+      - key: Jwt__Secret
+        sync: false
+      - key: Tmdb__ApiKey
+        sync: false
+      - key: Cors__FrontendOrigins__0
+        sync: false
