@@ -1,0 +1,7 @@
+{
+  "name": "cozycinema",
+  "compatibility_date": "2026-09-18",
+  "assets": {
+    "directory": "./frontend/dist"
+  }
+}
